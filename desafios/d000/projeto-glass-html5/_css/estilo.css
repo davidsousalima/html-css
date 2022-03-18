@@ -1,0 +1,29 @@
+@charset "UTF-8";
+body{
+    text-align: justify;
+    text-indent: 2em;
+}
+h3{
+    background-color: gray;
+}
+table{
+    border-collapse: collapse;
+    text-align: center;
+}
+th, td{
+    border: 1px solid black;
+    padding: 20px;
+}
+aside{
+    display: block;
+    background-color: rgba(169, 169, 169, 0.507);
+    width: 500px;
+    height: 400px;
+    
+}
+aside >h3{
+    background-color: gray;
+}
+footer{
+    text-align: center;
+}
