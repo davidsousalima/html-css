@@ -1,7 +1,21 @@
 @charset "UTF-8";
 body{
+    background-color: #dddddd67;
+    color: rgb(0, 0, 1);
     text-align: justify;
-    text-indent: 2em;
+    text-indent: 50px;
+}
+div#interface{
+    width: 900px;
+    background-color: white;
+    margin: -20px auto 0px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+header#cabecalho img#icone{
+    position: absolute;
+    top: 50px;
+    left: 900px;
 }
 nav#menu{
     display: block;
@@ -21,6 +35,17 @@ nav#menu li{
     background-color: #dddddd;
     padding: 10px;
     margin: 2px;
+    transition: background 0.5s;
+}
+nav#menu li:hover{
+    background-color: #60606071;
+}
+nav#menu  a{
+    color: #000;
+    text-decoration: none;
+}
+nav#menu a:hover{
+    color: #ffff;
 }
 h3{
     background-color: gray;
