@@ -80,7 +80,7 @@ nav#menu a:hover{
 }
 section#corpo{
     display: block;
-    width: 520px;
+    width: 500px;
     float: left;
     border-right: 1px solid rgba(0, 0, 0, 0.438);
     padding-right: 15px;
@@ -92,25 +92,26 @@ article h2{
     padding: 5px 0px ;
     margin: 10px 0px;
 }
-article#cabecalho-artigo > h1{
+hgroup h1{
     font-family: 'fontelogo';
-    font-size: 12pt;
+    font-size: 30px;
     color: #606060;
     margin-top: 0px;
     margin-bottom: 0px;
 }
-article#cabecalho-artigo > h2{
-    font-size: 13pt;
+hgroup h2{
+    font-size: 13px;
     color: #cecece;
     background-color: white;
     margin: 0px;
+    text-align: right;
 }
-article#cabecalho-artigo > h3{
+hgroup > h3{
     color: #606060;
-    font-size: 12px;
+    font-size: 20px;
 }
 
-}
+
 table{
     border-collapse: collapse;
     text-align: center;
@@ -141,13 +142,18 @@ th, td{
 }
 aside#lateral{
     display: block;
-    width: 350px;
+    width: 340px;
     float: right;
+    border: 1px solid rgba(0, 0, 0, 0.411);
+    box-shadow: 1px 0px 1px 0px rgba(0, 0, 0, 0.472);
+    background-color: #dddddd;
+    margin: 10px;
+    padding: 10px;
     
     
 
 }
-aside#lateral h1{
+aside#lateral  h1{
     font-family: 'fontelogo';
     font-size: 20pt;
     color: #606060;
