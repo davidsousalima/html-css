@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tudo sobre o Google Glass </title>
+    <link rel="stylesheet" href="_css/estilo.css">
+    <link rel="stylesheet" href="_css/form.css">
+    <script src="_javascript/funcoes.js"></script>
+    <script>
+        function calc(){
+            var qtd = Number(document.getElementById("cquat").value)
+            tot = qtd*1500
+            document.getElementById("ctot").value = tot
+        }
+    </script>
+</head>
+<body>
+    <div id="interface">
+        <header id="cabecalho">
+            <hgroup>
+                <h1>Google Glass</h1>
+                <h2>A revolução do Google está chegando</h2>
+            </hgroup>
+            <img id="icone" src="_imagens/contato.png" alt="">
+            <nav id="menu">
+                <h1>Menu Principal</h1>
+                <ul type="disc">
+                    <li onmousemove="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="index.html" >Home</a></li>
+                    <li onmousemove="mudaFoto('_imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="specs.html" >Especificações</a></li>
+                    <li onmousemove="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="fotos.html" >Fotos</a></li>
+                    <li onmousemove="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="multimidia.html">Multimídia</a></li>
+                    <li onmousemove="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="fale-conosco.html">Fale conosco</a></li>
+                </ul>
+            </nav>
+        </header>
+        <article id="noticia">
+            <header id="doartigo">
+                <hgroup>
+                    <h3>Fale Conosco > Contato</h3>
+                    <h1>Formulário de Contato</h1>
+                    <h2>por Gustavo Guanabara</h2>
+                    <h3 class="direita">Atualizado em 01/Maio/2013</h3> 
+                </hgroup>
+            </header>
+
+
+<form action="mailto:davidsousamusica01@gmail.com" method="post"id="tcontato" oninput="calc()">
+    <fieldset id="usuario">
+        <legend>Identificação do Usuário</legend>
+            <p>Nome: <input type="text" name="tnome" id="cnome" size="20" maxlength="30" placeholder="Nome Completo"></p>
+            <p>Senha: <input type="password" name="tsenha" id="csenha" size="8" maxlength="8" placeholder="8 digitos"></p>
+            <p>E-mail:<input type="email" name="temail" id="cemail" size="20" maxlength="40"></p>
+            <fieldset id="sexo">
+                <legend>Sexo:</legend>
+                    <input type="radio" name="tsexo" id="cmasc"><label for="cmasc">Masculino</label>
+                    <input type="radio" name="tsexo" id="cfem"><label for="cfem">Feminino</label>
+            </fieldset>
+            Data de Nascimento: <input type="date" name="tnasc" id="cnasc">
+    </fieldset>
+    <fieldset id="endereco">
+            <legend>Endereço do Usuário</legend>
+            <p><label for="crua">Logradouro:</label><input type="text" name="trua" id="crua" size="13" maxlength="80" placeholder="Rua"></p>
+            <p><label for="cnum">Número:</label><input type="number" name="tnum" id="cnum" min="0" max="15"></p>
+            <p><label for="">Estado:</label><select name="testad" id="cesta">
+                <option value="" selected>São Paulo</option>
+            </select></p>
+            <p><label for="">Cidade:</label><input type="text" name="tcidade" id="ccidade" list="cidades"></p>
+            <datalist id="cidades">
+                <option value=""></option>
+            </datalist>
+    </fieldset>
+    <fieldset id="mensagem">
+        <legend>Mensagem do Usuário</legend>
+            <p><label for="">Grau de Urgência:</label><input type="range" name="tur" id="cur" min="0" max="10"></p>
+           <p><label for=""> Mensagem:</label>
+            <textarea name="tmsg" id="cmsg" cols="30" rows="10">
+
+            </textarea> </p>
+    </fieldset>
+    <fieldset id="pedido">
+            <legend>Quero um Google Glass</legend>
+            <p><input type="checkbox" name="tped" id="cped"><label for="cped">
+                Gostaria de adquirir um Google Glass quando disponível
+            </label></p>
+            <p><label for="ccor">Cor:</label><input type="color" name="tcor" id="ccor"></p>
+            <p><label for="cquat">Quantidade:</label><input type="number" name="tquant" id="cquat" min="0" max="5"></p>
+            <p><label for="ctot">Preço Total: R$</label><input type="text" name="ttot" id="ctot" placeholder="Total a pagar" readonly></p>
+    </fieldset>
+
+   <input type="image" src="_imagens/botao-enviar.png" alt="" name="tenviar">
+</form>
+<footer id="rodape">
+    <p>
+        Copyright&copy;2013 - by Gustavo Guanabara <br>
+       <a href="https://facebook.com/cursoemvideo" target="_blank">Facebook</a>  | <a href="https://twitter.com/cursoemvideo" target="_blank">Twitter</a>
+    </p> 
+</footer>
+</div>
+</body>
+</html>
