@@ -41,7 +41,7 @@ section#login{
 }
 section#login > div#imagem{
     display: block;
-    background:#5f2c82 url(../imagens/pexels-pixabay-248921.jpg);
+    background:#5f2c82 url(../imagens/metal.jpg);
     height: 200px;
     background-repeat: no-repeat;
     background-size: cover;
